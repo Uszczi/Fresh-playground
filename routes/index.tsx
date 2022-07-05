@@ -1,16 +1,3 @@
-=============
-
-WARNING: You are currently running a version of TypeScript which is not officially supported by typescript-estree.
-
-You may find that it works just fine, or you may not.
-
-SUPPORTED TYPESCRIPT VERSIONS: >=3.2.1 <3.6.0
-
-YOUR TYPESCRIPT VERSION: 3.9.10
-
-Please only submit bug reports when using the officially supported version.
-
-=============
 /** @jsx h */
 import Counter from "../islands/Counter.tsx";
 import { tw } from "@twind";
