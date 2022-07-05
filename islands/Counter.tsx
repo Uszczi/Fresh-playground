@@ -26,7 +26,7 @@ const HighlightChars = (props: HighlightProps) => {
 };
 
 export default function Counter() {
-  const fzf = new Fzf(movies, { limit: 22 });
+  const fzf = new Fzf(movies, { limit: 22, casing: "case-insensitive" });
   const [display_list, setList] = useState<DisplayList>(movies);
   const [st, setSt] = useState(false);
 
