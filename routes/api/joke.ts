@@ -15,6 +15,10 @@ const JOKES = [
 ];
 
 export const handler = (_req: Request, _ctx: HandlerContext): Response => {
+  console.log(_req);
+  const u = new URL(_req.url);
+  console.log(u.searchParams.get("aaa"));
+  console.log(_ctx);
   const randomIndex = Math.floor(Math.random() * JOKES.length);
   const body = JOKES[randomIndex];
   return new Response(body);
