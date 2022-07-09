@@ -1,17 +1,14 @@
 /** @jsx h */
-import { movies } from "../data/movies.ts";
-import Counter from "../islands/Counter.tsx";
 import Modal from "../islands/Modal.tsx";
+import Movies from "../islands/Movies.tsx";
 import { tw } from "@twind";
-import { Fzf, FzfResultItem } from "https://esm.sh/fzf@0.5.1";
-import { h, createRef } from "preact";
-import { useState } from "preact/hooks";
+import { h } from "preact";
 
 export default function Home() {
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
       <Modal />
-      <Counter />
+      <Movies />
     </div>
   );
 }
